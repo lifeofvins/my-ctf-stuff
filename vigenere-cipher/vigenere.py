@@ -16,7 +16,7 @@ for letter in enc:
         continue
     dec += chr((ord(letter) - keys[i % 6]))
     i += 1
-print()
+
 print(dec)
 print("CTFlearn{" + dec + "}")
-print("CTFlearn{" + dec[4:] + "}")
+print("CTFlearn{" + dec[5:len(dec)-1] + "}")
